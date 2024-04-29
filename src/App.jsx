@@ -1,24 +1,29 @@
 import {
-  Hero, PopularProducts, Footer, Services, SuperQuality, SpecialOffer,
-  Subscribe, CustomerReviews
-
-} from './Sections/index'
-import { Nav } from './Components/Nav';
+  Hero,
+  PopularProducts,
+  Footer,
+  Services,
+  SuperQuality,
+  SpecialOffer,
+  Subscribe,
+  CustomerReviews,
+} from "./Sections/index";
+import { Nav } from "./Components/Nav";
 
 const App = () => (
   <main className="relative">
     <Nav></Nav>
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
-    <section className="padding">
+    <section className="padding-x">
       <PopularProducts />
     </section>
-    <section className="padding">
+    <section className="padding-x">
       <SuperQuality />
     </section>
     <section className="padding-x py-10">
-      <Services></Services>
+      <Services />
     </section>
     <section className="padding">
       <SpecialOffer></SpecialOffer>
@@ -34,8 +39,7 @@ const App = () => (
     <section className="bg-black padding-x padding-t pb-8">
       <Footer></Footer>
     </section>
-
   </main>
-)
+);
 
 export default App;
